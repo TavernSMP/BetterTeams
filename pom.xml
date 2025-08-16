@@ -199,6 +199,15 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- TavernUsername -->
+        <dependency>
+            <groupId>com.tavernsmp</groupId>
+            <artifactId>tavernusername</artifactId>
+            <version>1.0.23</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/TavernUsername-1.0.23.jar</systemPath>
+        </dependency>
+
         <!-- AssertJ -->
         <dependency>
             <groupId>org.assertj</groupId>
