@@ -4,6 +4,8 @@ import com.booksaw.betterTeams.*;
 import com.booksaw.betterTeams.commands.ParentCommand;
 import com.booksaw.betterTeams.commands.presets.TeamSubCommand;
 import com.booksaw.betterTeams.message.HelpMessage;
+import com.muhammaddaffa.tavernusername.spigot.users.User;
+import com.muhammaddaffa.tavernusername.spigot.users.repository.UserRepository;
 import org.bukkit.command.CommandSender;
 
 import java.util.List;
@@ -37,6 +39,12 @@ public class ChatCommand extends TeamSubCommand {
 
 		StringBuilder message = new StringBuilder();
 		for (String arg : args) {
+			// Reverse engineer to replace the real name with fake name
+			User user = UserRepository.findRealName(arg);
+			if (user != null && user.getUsername() != null) {
+				message.append(user.getUsername()).append(" ");
+				continue;
+			}
 			message.append(arg).append(" ");
 		}
 
