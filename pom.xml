@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.booksaw.betterteams</groupId>
     <artifactId>betterteams-parent</artifactId>
-    <version>5.1.6</version>
+    <version>5.1.7</version>
     <packaging>pom</packaging>
 
     <name>BetterTeams</name>
@@ -50,7 +50,6 @@
 
         <!-- Spigot API -->
         <spigot.version>1.20-R0.1-SNAPSHOT</spigot.version>
-        <folialib.version>0.5.2</folialib.version>
         <bstats.version>3.2.1</bstats.version>
         <adventure.version>4.26.1</adventure.version>
 
@@ -115,7 +114,7 @@
             <dependency>
                 <groupId>com.booksaw.betterteams</groupId>
                 <artifactId>betterteams</artifactId>
-                <version>5.1.6</version>
+                <version>5.1.7</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
@@ -138,12 +137,6 @@
                 <artifactId>spigot-api</artifactId>
                 <version>${spigot.version}</version>
                 <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.tcoded</groupId>
-                <artifactId>FoliaLib</artifactId>
-                <version>${folialib.version}</version>
-                <scope>compile</scope>
             </dependency>
             <dependency>
                 <groupId>org.bstats</groupId>
